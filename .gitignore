@@ -14,7 +14,8 @@ data4.csv
 
 #python
 read_data.py
-
+pages/3_test.py
+pages/2_RévisionsKO.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
