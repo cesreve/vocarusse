@@ -2,6 +2,19 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
 ### Python ###
+# Other
+todo.md
+prompt.txt
+
+# datas
+data.csv
+data2.csv
+data3.csv
+data4.csv
+
+#python
+read_data.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -175,12 +188,3 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# Other
-todo.md
-prompt.txt
-
-# datas
-data.csv
-data2.csv
-data3.csv
-data4.csv

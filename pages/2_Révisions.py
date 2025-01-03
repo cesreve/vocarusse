@@ -25,7 +25,6 @@ with st.sidebar:
         # available_subcategories = ['Top100', 'Couleurs de base']
     selected_subcategories = st.multiselect("Subcategories", available_subcategories, key="subcategories")
 
-
 user_id = st.session_state.get("user_id")
 if not user_id:
     st.warning("Please log in to view words to review.")
@@ -40,7 +39,7 @@ vocabulaire = dict(zip(mots_francais, mots_russes))
 word_ids = dict(zip(mots_francais, words_to_review_df['word_id'].tolist()))
 
 # st.write(vocabulaire)
-st.write(mots_francais)
+# st.write(mots_francais)
 # Modified callback functions
 def i_know_callback():
     word_id = word_ids.get(st.session_state.mot_francais)
@@ -62,13 +61,10 @@ if "mot_francais" not in st.session_state:
     st.session_state.mot_francais = choisir_mot() # Initialize with a word
 
 # ... (other session state initializations can be removed)
-
-
-
-
 # Display the current word
 if st.session_state.mot_francais:  # Check if there's a word to display
     st.write(st.session_state.mot_francais)
+    #st.write(vocabulaire[st.session_state.mot_francais]) #["mot_francais"])
 
     col1, col2 = st.columns(2)  # Arrange buttons in columns
     with col1:
