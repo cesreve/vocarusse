@@ -3,7 +3,7 @@ from auth import authenticate, create_user
 from database import insert_data_into_db
 from datavalidation import read_and_validate_csv
 
-#st.set_page_config(page_title="Vocabulaire Russe", page_icon=":ru:", layout="centered")
+st.set_page_config(page_title="Vocabulaire Russe", page_icon=":ru:", layout="centered")
 st.set_page_config(layout="centered")
 
 # --- Sidebar with Login/Signup ---
